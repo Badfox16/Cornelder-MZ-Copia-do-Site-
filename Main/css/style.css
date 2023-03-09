@@ -13,9 +13,21 @@ body {
 }
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: white;
 }
-header .header-logo {
+header .header-img {
+  width: 0;
+  margin: 0;
+}
+header .header-img a img {
+  width: 280px;
+}
+header .header-lang {
+  display: flex;
+  flex-direction: column;
+}
+header .header-lang .header-lang-img {
+  display: flex;
 }
