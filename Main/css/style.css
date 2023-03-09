@@ -77,7 +77,13 @@ header .nav-bar nav ul li {
   margin: 0 45px;
   list-style: none;
 }
-
+header .nav-bar nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .nav-bar nav ul li a:focus {
+  text-decoration: underline;
+}
 /* Segundo nav-bar (nav-bar-blue) */
 
 header .nav-bar-blue {
@@ -111,4 +117,3 @@ header .nav-bar-blue nav ul li {
 header .nav-bar-blue nav ul li:hover {
   color: var(--colorOrange);
 }
-
