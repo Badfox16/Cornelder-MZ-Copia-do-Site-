@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +6,114 @@
 }
 :root {
   --fontPrimary: "PT Sans Narrow", sans-serif;
+  --colorBlue: #1e225c;
+  --colorOrange: #ec6a30;
 }
+
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: var(--fontPrimary);
   font-size: 20px;
 }
 header {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
   background-color: white;
+  font-size: 16px;
+  width: 100vw;
 }
-header .header-logo {
+/* Trabalhando com a primeira nav-bar */
+
+header #nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15%;
+  width: 90%;
+  height: 6rem;
+
+  /* background-color: black; */
+}
+
+/* Trabalhando com a imagem principal(logo) */
+header .header-img {
+  width: 0;
+  margin: 0;
+}
+header .header-img a img {
+  width: 280px;
+}
+
+/* Trabalho com a a parte que tem o p de language e as duas imagens */
+header .header-lang {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px 55px;
+}
+header .header-lang .lang-title p {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+/* Espacamento entre as bandeiras */
+header .header-lang .header-lang-img {
+  display: flex;
+  gap: 10px;
+}
+
+/* Trabalhando com a barra de navegacao  superior (inicial) */
+header .nav-bar {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+header .nav-bar nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .nav-bar nav ul li {
+  margin: 0 45px;
+  list-style: none;
+}
+header .nav-bar nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .nav-bar nav ul li a:focus {
+  text-decoration: underline;
+}
+/* Segundo nav-bar (nav-bar-blue) */
+
+header .nav-bar-blue {
+  display: flex;
+  margin: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--colorBlue);
+  color: white;
+  width: 100vw;
+  font-weight: 700;
+  height: 4rem;
+}
+header .nav-bar-blue nav {
+  margin-left: 39%;
+}
+header .nav-bar-blue nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
+
+header .nav-bar-blue nav ul li {
+  list-style: none;
+  margin: 0 12px;
+  transition: ease-in 0.2s;
+}
+
+/*Hover nos links  */
+header .nav-bar-blue nav ul li:hover {
+  color: var(--colorOrange);
 }
