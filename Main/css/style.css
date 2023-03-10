@@ -106,6 +106,7 @@ header .nav-bar-blue nav ul {
 }
 
 header .nav-bar-blue nav ul li {
+  cursor: pointer;
   list-style: none;
   margin: 0 0px;
   transition: ease-in 0.3s;
@@ -123,29 +124,28 @@ header .nav-bar-blue nav ul li:visited {
 
 /* Exibicao do menu drop */
 #dropdown ul {
-  /* display: none; */
+  display: none;
+  position: absolute;
+  width: 11vw;
+  background-color: var(--colorBlue);
+  border-bottom: 2px solid var(--colorOrange);
 }
 #dropdown ul li {
-  height: 3.5rem;
-  padding: 11px;
+  height: 3.3rem;
+  padding: 8px;
 }
 /* Hover em todos os elementos da div dropdown */
 #dropdown ul li > a:hover {
   color: black;
   background-color: var(--colorOrange);
 }
-
 /* Exibicao no about */
 .about-drop ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--colorBlue);
-  position: absolute;
-  width: 11vw;
-  top: 100%;
-  left: 55%;
-  border-bottom: 2px solid var(--colorOrange);
+  top: 80%;
+  left: 57%;
 }
 .about-drop ul li > a {
   display: block;
@@ -153,7 +153,7 @@ header .nav-bar-blue nav ul li:visited {
   text-decoration: none;
   width: 11vw;
   padding: 10px 15px 15px 15px;
-  transition: ease-in 0.2s;
+  transition: ease-in 0.1s;
 }
 
 /* Exibicao no port */
@@ -161,12 +161,8 @@ header .nav-bar-blue nav ul li:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--colorBlue);
-  position: absolute;
-  width: 11vw;
-  top: 100%;
-  left: 60%;
-  border-bottom: 2px solid var(--colorOrange);
+  top: 80%;
+  left: 62%;
 }
 .port-drop ul li > a {
   display: block;
@@ -182,12 +178,8 @@ header .nav-bar-blue nav ul li:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--colorBlue);
-  position: absolute;
-  width: 11vw;
-  top: 100%;
-  left: 66%;
-  border-bottom: 2px solid var(--colorOrange);
+  top: 80%;
+  left: 68%;
 }
 .traffis-drop ul li > a {
   display: block;
@@ -203,8 +195,8 @@ Respeita caralho */
 header .nav-bar-blue nav ul li:hover #dropdown ul {
   display: flex;
   color: var(--colorOrange);
-  animation-duration: 0.4s;
-  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
   animation-name: dropdown;
 }
 
@@ -213,6 +205,6 @@ header .nav-bar-blue nav ul li:hover #dropdown ul {
     top: 200%;
   }
   to {
-    top: 100%;
+    top: 80%;
   }
 }
