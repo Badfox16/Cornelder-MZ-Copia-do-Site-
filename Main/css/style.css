@@ -111,8 +111,17 @@ header .nav-bar-blue nav ul li {
   transition: ease-in 0.3s;
   padding: 20px;
 }
+header .nav-bar-blue nav ul li a {
+  text-decoration: none;
+  transition: ease-in 0.3s;
+  color: white;
+}
 
 /*Hover nos links  */
+header .nav-bar-blue nav ul li a:hover {
+  color: var(--colorOrange);
+}
+
 header .nav-bar-blue nav ul li:hover {
   color: var(--colorOrange);
 }
@@ -138,11 +147,13 @@ header .nav-bar-blue nav ul li:hover {
   padding: 10px 15px 15px 15px;
   transition: ease-out 0.1s;
 }
+
 /* Hover em todos os elementos da div dropdown */
 #dropdown ul li > a:hover {
   color: black;
   background-color: var(--colorOrange);
 }
+
 /* Exibicao no about */
 .about-drop ul {
   display: flex;
