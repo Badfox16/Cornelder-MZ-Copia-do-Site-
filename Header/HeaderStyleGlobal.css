@@ -183,7 +183,7 @@ header .nav-bar-blue nav ul li:hover {
   left: 64%;
 }
 
-/* Where are javaScript?Where are javaScript?Where are javaScript?Where are javaScript?*/
+/* Where is javaScript?Where is javaScript?Where is javaScript?Where is javaScript?*/
 header .nav-bar-blue nav ul li:hover #dropdown ul {
   display: flex;
   color: var(--colorOrange);
