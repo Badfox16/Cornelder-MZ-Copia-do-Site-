@@ -1,82 +1,48 @@
-// IMAGE SLIDES & CIRCLES ARRAYS, & COUNTER
-var imageSlides = document.getElementsByClassName('imageSlides');
-var circles = document.getElementsByClassName('circle');
-var leftArrow = document.getElementById('leftArrow');
-var rightArrow = document.getElementById('rightArrow');
-var counter = 0;
+//SLIDEHOW
+let slideIndex = 0;
+showSlidesAuto();
+showSlides(slideIndex);
 
-// HIDE ALL IMAGES FUNCTION
-function hideImages() {
-  for (var i = 0; i < imageSlides.length; i++) {
-    imageSlides[i].classList.remove('visible');
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
   }
-}
-
-// REMOVE ALL DOTS FUNCTION
-function removeDots() {
-  for (var i = 0; i < imageSlides.length; i++) {
-    circles[i].classList.remove('dot');
+  if (n < 1) {
+    slideIndex = slides.length;
   }
-}
-
-// SINGLE IMAGE LOOP/CIRCLES FUNCTION
-function imageLoop() {
-  var currentImage = imageSlides[counter];
-  var currentDot = circles[counter];
-  currentImage.classList.add('visible');
-  removeDots();
-  currentDot.classList.add('dot');
-  counter++;
-}
-
-// LEFT & RIGHT ARROW FUNCTION & CLICK EVENT LISTENERS
-function arrowClick(e) {
-  var target = e.target;
-  if (target == leftArrow) {
-    clearInterval(imageSlideshowInterval);
-    hideImages();
-    removeDots();
-    if (counter == 1) {
-      counter = (imageSlides.length - 1);
-      imageLoop();
-      imageSlideshowInterval = setInterval(slideshow, 5000);
-    } else {
-      counter--;
-      counter--;
-      imageLoop();
-      imageSlideshowInterval = setInterval(slideshow, 5000);
-    }
-  } 
-  else if (target == rightArrow) {
-    clearInterval(imageSlideshowInterval);
-    hideImages();
-    removeDots();
-    if (counter == imageSlides.length) {
-      counter = 0;
-      imageLoop();
-      imageSlideshowInterval = setInterval(slideshow, 5000);
-    } else {
-      imageLoop();
-      imageSlideshowInterval = setInterval(slideshow, 5000);
-    }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-}
-
-leftArrow.addEventListener('click', arrowClick);
-rightArrow.addEventListener('click', arrowClick);
-
-
-// IMAGE SLIDE FUNCTION
-function slideshow() {
-  if (counter < imageSlides.length) {
-    imageLoop();
-  } else {
-    counter = 0;
-    hideImages();
-    imageLoop();
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
 
-// SHOW FIRST IMAGE, & THEN SET & CALL SLIDE INTERVAL
-setTimeout(slideshow, 1000);
-var imageSlideshowInterval = setInterval(slideshow, 5000);
+function showSlidesAuto() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlidesAuto, 10000); // Change image every 2 seconds
+}

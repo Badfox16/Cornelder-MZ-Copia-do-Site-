@@ -16,67 +16,67 @@ body {
   font-family: var(--fontPrimary);
   font-size: 20px;
 }
-/* Slide show */
-.slideshowContainer {
+/* Slideshow container */
+.slideshow-container {
   position: relative;
-  overflow: hidden;
-  width: 100%;
+  width: 100vw;
   height: 40rem;
+  overflow: hidden;
 }
-.slideshowContainer img {
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.imageSlides {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0;
-  transition: ease-in-out 0.4s;
-  z-index: -1;
-}
-
-/* add 'visible' class via Javascript */
-.visible {
-  opacity: 1;
-}
-
-.slideshowArrow {
-  font-size: 2rem;
-  padding: 0 20px 5px 20px;
-  color: black;
+.prev,
+.next {
   cursor: pointer;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.slideshowArrow:hover {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
   color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-#leftArrow {
-  position: absolute;
-  left: 4%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--colorOrange);
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-#rightArrow {
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
   position: absolute;
-  right: 4%;
-  top: 50%;
-  transform: translate(50%, -50%);
-  background-color: var(--colorOrange);
+  font-size: 3rem;
+  top: 90%;
+  width: 100%;
+  text-align: center;
 }
-#leftArrow,
-#rightArrow {
-  transition: 0.5s ease-in-out;
-}
-#leftArrow:hover,
-#rightArrow:hover {
-  background-color: rgba(218, 218, 19, 0.952);
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
