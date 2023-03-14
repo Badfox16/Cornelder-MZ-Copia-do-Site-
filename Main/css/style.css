@@ -15,5 +15,85 @@ body {
   height: 100vh;
   font-family: var(--fontPrimary);
   font-size: 20px;
+}
+
+/* Slide show */
+.slideshowContainer {
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 40rem;
+}
+
+.imageSlides {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  transition: ease-in-out 0.4s;
+  z-index: -1;
+}
+
+/* add 'visible' class via Javascript */
+.visible {
+  opacity: 1;
+}
+
+.slideshowArrow {
+  font-size: 2rem;
+  padding: 0 20px 5px 20px;
+  color: black;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.slideshowArrow:hover {
+  color: white;
+}
+
+#leftArrow {
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--colorOrange);
+}
+
+#rightArrow {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  background-color: var(--colorOrange);
+}
+#leftArrow,
+#rightArrow {
+  transition: 0.5s ease-in-out;
+}
+#leftArrow:hover,
+#rightArrow:hover {
+  background-color: rgba(218, 218, 19, 0.952);
+}
+
+.slideshowCircles {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.circle {
+  display: inline-block;
+  opacity: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  transition: 1s ease-in-out;
 }
