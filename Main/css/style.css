@@ -22,7 +22,6 @@ body {
   overflow: hidden;
   width: 100%;
   height: 40rem;
-  z-index: -1;
 }
 .slideshowContainer img {
   width: 100%;
