@@ -104,13 +104,39 @@ body {
   align-items: center;
 }
 .contents .titulo-port .titulos {
-  margin-top: 5rem;
+  margin-top: 4rem;
   text-align: center;
 }
 .contents .titulo-port .titulos :nth-child(1) {
   letter-spacing: 1px;
   font-size: 2.5rem;
+  margin-bottom: 2%;
 }
 .contents .titulo-port .titulos :nth-child(2) {
   letter-spacing: 1px;
+  margin-top: 4%;
+}
+.contents .titulo-port .titulos :nth-child(3) {
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+}
+.contents .titulo-port .titulos hr {
+  border-width: 0;
+  margin: 1.45% auto;
+  width: 5%;
+  border: 2px solid var(--colorOrange);
+}
+.contents .titulo-port .map-img {
+  text-align: center;
+}
+
+.contents .titulo-port .map-img img {
+  width: 80%;
+}
+.contents .titulo-port .map-img hr {
+  margin: 10% auto;
+  border-width: 0;
+  height: 1px;
+  border: 1px solid gray;
+  width: 80%;
 }
