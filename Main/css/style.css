@@ -136,7 +136,21 @@ body {
 .contents .titulo-port .map-img hr {
   margin: 10% auto;
   border-width: 0;
-  height: 1px;
-  border: 1px solid gray;
-  width: 80%;
+  border: 1px solid rgba(128, 128, 128, 0.349);
+  width: 100%;
+}
+
+/* Icons de negocios */
+.compras-map .compras-img {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 120%;
+  width: 10%;
+}
+.compras-map .compras-img img {
+  display: flex;
+  padding: 5px;
+  background-color: var(--colorOrange);
 }
