@@ -154,7 +154,7 @@ ul {
 
 .footer-links-middle hr {
   position: absolute;
-  bottom: 58%;
+  bottom: 60%;
   width: 4%;
   color: #ed6a1b;
 }
@@ -202,6 +202,17 @@ ul {
   justify-content: space-between;
 }
 
+.footer-bottom p:first-child{
+  margin-left: 6rem;
+}
+
+.footer-bottom p:last-child{
+  margin-right: 6rem;
+}
+
+.footer-bottom p:last-child>span{
+  color: #a7cd70;
+}
 
 /* ---------- HOVER---------*/
 
