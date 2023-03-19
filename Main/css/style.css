@@ -144,10 +144,9 @@ body {
   padding: 1rem;
   width: 20%;
 }
-.tables tbody td:nth-child(n + 2) {
+.tables tbody td:nth-child(1n + 2) {
   color: green;
 }
-
 .contents .titulo-port .map-img {
   text-align: center;
 }
