@@ -79,14 +79,15 @@ ul {
   position: absolute;
   bottom: 60%;
   width: 4%;
-  color: #ed6a1b;
+  border-width: 0;
+  border: #ed6a1b solid 1px;
 }
 
-.hr:hover{
+.hr:hover {
   color: red;
 }
 
-.right-arrow{
+.right-arrow {
   font-size: 0.6rem;
   align-self: center;
   justify-self: center;
@@ -94,7 +95,7 @@ ul {
   cursor: default;
 }
 
-.text-arrow{
+.text-arrow {
   font-size: 17px;
   margin-left: 0.5rem;
   cursor: pointer;
@@ -102,10 +103,11 @@ ul {
   color: #fff;
 }
 
-.text-arrow:visited, .text-arrow:active{
+.text-arrow:visited,
+.text-arrow:active {
   color: #fff;
 }
-.text-arrow:focus{
+.text-arrow:focus {
   color: #fff;
   text-decoration: underline;
 }
@@ -172,14 +174,11 @@ ul {
   font-size: 20px;
 }
 
-
-
 .footer-links-middle ul li {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
 }
-
 
 /*-------------------------Right-------------*/
 .footer-links-right {
@@ -203,22 +202,22 @@ ul {
 }
 
 /**/
-.footer-bottom{
+.footer-bottom {
   display: flex;
   border-top: 1px solid #3f5161;
   padding: 30px 0;
   justify-content: space-between;
 }
 
-.footer-bottom p:first-child{
+.footer-bottom p:first-child {
   margin-left: 6rem;
 }
 
-.footer-bottom p:last-child{
+.footer-bottom p:last-child {
   margin-right: 6rem;
 }
 
-.footer-bottom p:last-child>span{
+.footer-bottom p:last-child > span {
   color: #a7cd70;
 }
 
@@ -234,9 +233,10 @@ ul {
 }
 
 /*footer arrow and text */
-.text-arrow:hover {
+.right-arrow:hover {
   color: #ed6a1b;
 }
-.right-arrow:hover{
- color: #ed6a1b;
+
+.text-arrow:hover {
+  color: #ed6a1b;
 }
