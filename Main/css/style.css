@@ -107,16 +107,16 @@ body {
   margin-top: 4rem;
   text-align: center;
 }
-.contents .titulo-port .titulos :nth-child(1) {
+.contents .titulo-port .titulos h1:nth-child(1) {
   letter-spacing: 1px;
   font-size: 2.5rem;
   margin-bottom: 2%;
 }
-.contents .titulo-port .titulos :nth-child(2) {
+.contents .titulo-port .titulos h5:nth-child(2) {
   letter-spacing: 1px;
   margin-top: 4%;
 }
-.contents .titulo-port .titulos :nth-child(3) {
+.contents .titulo-port .titulos h5:nth-child(3) {
   letter-spacing: 1px;
   margin-bottom: 5%;
 }
@@ -126,6 +126,20 @@ body {
   width: 5%;
   border: 2px solid var(--colorOrange);
 }
+/* Mexendo com a tabela */
+.tables {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  margin: 0 auto;
+}
+.tables th {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .contents .titulo-port .map-img {
   text-align: center;
 }
@@ -134,7 +148,7 @@ body {
   width: 80%;
 }
 .contents .titulo-port .map-img hr {
-  margin: 10% auto;
+  margin: 5% auto;
   border-width: 0;
   border: 1px solid rgba(128, 128, 128, 0.349);
   width: 100%;
@@ -143,14 +157,38 @@ body {
 /* Icons de negocios */
 .compras-map .compras-img {
   display: flex;
-  margin: 0 auto;
-  justify-content: space-evenly;
   align-items: center;
-  gap: 120%;
+  gap: 20rem;
   width: 10%;
 }
+#hr {
+  display: flex;
+  width: 100%;
+  margin-top: -2%;
+  gap: 2rem;
+}
+
 .compras-map .compras-img img {
   display: flex;
-  padding: 5px;
+  padding: 15px;
   background-color: var(--colorOrange);
+}
+
+/* Butoes abaixo das  imagens */
+.compras-map .compras-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 280%;
+  width: 10%;
+  margin: 0 auto;
+}
+.compras-map .compras-btn button {
+  border: none;
+  background-color: var(--colorBlue);
+  color: var(--colorOrange);
+  border-radius: 5px;
+  padding: 8px 43px;
+  margin-top: -34%;
+  transition: ease-in-out 0.3s;
 }
