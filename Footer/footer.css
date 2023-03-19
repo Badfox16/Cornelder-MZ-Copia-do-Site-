@@ -79,7 +79,8 @@ ul {
   position: absolute;
   bottom: 60%;
   width: 4%;
-  color: #ed6a1b;
+  border-width: 0;
+  border: #ed6a1b solid 1px;
 }
 
 .hr:hover{
