@@ -205,4 +205,63 @@ header .nav-bar-blue nav ul li:hover #dropdown ul {
     margin-right: 15%;
   }
 
+  /* Exibicao do menu drop */
+  #dropdown ul {
+    display: none;
+    width: 11vw;
+    position: absolute;
+    top: 88%;
+    background-color: var(--colorBlue);
+    border-bottom: 2px solid var(--colorOrange);
+    z-index: 1;
+  }
+  #dropdown ul li {
+    height: 3.3rem;
+    padding: 8px;
+  }
+  #dropdown ul li > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 11vw;
+    padding: 10px 15px 15px 15px;
+    transition: ease-out 0.1s;
+  }
+
+  /* Hover em todos os elementos da div dropdown */
+  #dropdown ul li > a:hover {
+    color: black;
+    background-color: var(--colorOrange);
+  }
+  /* Exibicao no about */
+  .about-drop ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 47.2%;
+  }
+  /* Exibicao no port */
+  .port-drop ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 52.8%;
+  }
+
+  /* Exibicao no port */
+  .traffis-drop ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 62%;
+  }
+
+  /* Where is javaScript?Where is javaScript?Where is javaScript?Where is javaScript?*/
+  header .nav-bar-blue nav ul li:hover #dropdown ul {
+    display: flex;
+    color: var(--colorOrange);
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-name: dropdown;
+  }
 }
