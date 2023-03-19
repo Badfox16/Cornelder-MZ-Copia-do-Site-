@@ -109,18 +109,18 @@ body {
   margin-top: 4rem;
   text-align: center;
 }
-.contents .titulo-port .titulos h1:nth-child(1) {
+.contents .titulo-port .titulos h1:first-of-type {
   letter-spacing: 1px;
   font-size: 2.5rem;
   margin-bottom: 2%;
 }
-.contents .titulo-port .titulos h5:nth-child(2) {
+.contents .titulo-port .titulos h5:first-of-type {
   letter-spacing: 1px;
   margin-top: 4%;
 }
-.contents .titulo-port .titulos h5:nth-child(3) {
+.contents .titulo-port .titulos h5:last-of-type {
   letter-spacing: 1px;
-  margin-bottom: 5%;
+  margin-top: 3%;
 }
 .contents .titulo-port .titulos hr {
   border-width: 0;
