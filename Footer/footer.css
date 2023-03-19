@@ -75,6 +75,16 @@ ul {
   width: 100%;
 }
 
+.hr {
+  position: absolute;
+  bottom: 60%;
+  width: 4%;
+  color: #ed6a1b;
+}
+
+.hr:hover{
+  color: red;
+}
 
 .right-arrow{
   font-size: 0.6rem;
@@ -88,6 +98,16 @@ ul {
   font-size: 17px;
   margin-left: 0.5rem;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.text-arrow:visited, .text-arrow:active{
+  color: #fff;
+}
+.text-arrow:focus{
+  color: #fff;
+  text-decoration: underline;
 }
 
 /*-------------LEFT-------*/
@@ -152,12 +172,7 @@ ul {
   font-size: 20px;
 }
 
-.footer-links-middle hr {
-  position: absolute;
-  bottom: 60%;
-  width: 4%;
-  color: #ed6a1b;
-}
+
 
 .footer-links-middle ul li {
   display: flex;
@@ -178,13 +193,6 @@ ul {
   font-weight: bold;
   position: relative;
   font-size: 20px;
-}
-
-.footer-links-right hr {
-  position: absolute;
-  bottom: 60%;
-  width: 4%;
-  color: #ed6a1b;
 }
 
 .footer-links-right ul li {
@@ -226,7 +234,7 @@ ul {
 }
 
 /*footer arrow and text */
-.text-arrow:hover{
+.text-arrow:hover {
   color: #ed6a1b;
 }
 .right-arrow:hover{
