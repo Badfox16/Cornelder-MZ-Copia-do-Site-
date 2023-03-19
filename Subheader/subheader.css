@@ -1,11 +1,5 @@
-body {
-    font-family: 'PT Sans Narrow', sans-serif;
-    overflow-x: hidden;
-    font-size: 20px;
-    position: relative;
-}
-
 .back{
+    font-family: 'PT Sans Narrow', sans-serif;
     background-position: center center;
     background-repeat: no-repeat;
     padding-bottom: 120px;
