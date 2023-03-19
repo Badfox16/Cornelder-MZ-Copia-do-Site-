@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title-position{
+    font-family: PT Sans Narrow,sans-serif;
+    text-transform: capitalize;
+    color: #272727;
+    margin: 5rem 8rem 1rem 8rem;
+}
+.link-position{
+    font-family: PT Sans Narrow,sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #272727;
+    margin: 8rem;
+}
+
+.iframe-pdf{
+    border: none;
+    height: 100%;
+    width: 70%;
+    margin:  1.5rem auto 10rem auto;
+}
+
+.iframe-pdf iframe{
+    border: none;
+}
