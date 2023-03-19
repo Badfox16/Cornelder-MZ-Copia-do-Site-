@@ -215,9 +215,9 @@ ul {
 }
 
 /*footer arrow and text */
+.text-arrow:hover{
+  color: #ed6a1b;
+}
 .right-arrow:hover{
  color: #ed6a1b;
-}
-.text-arrow:hover {
-  color: red;
 }
