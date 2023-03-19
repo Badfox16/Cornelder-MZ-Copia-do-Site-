@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.title-position{
+    font-family: PT Sans Narrow,sans-serif;
+    color: #272727;
+}
+.link-position{
+    font-family: PT Sans Narrow,sans-serif;
+    color: #272727;
+}
+
+.iframe-pdf{
+    height: 100%;
+    width: 70%;
+    margin:  0 auto 10rem auto;
+}
