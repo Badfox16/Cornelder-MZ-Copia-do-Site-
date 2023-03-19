@@ -128,18 +128,26 @@ body {
 }
 /* Mexendo com a tabela */
 .tables {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10%;
+  width: 80%;
   margin: 0 auto;
 }
+.tables table {
+  border: none;
+}
 .tables th {
-  padding: 15px;
-  font-size: 20px;
+  background-color: var(--colorBlue);
+  color: var(--colorOrange);
+  font-size: 1.1rem;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 800;
+  padding: 1rem;
+  width: 20%;
 }
+.tables tbody td:nth-child(n + 2) {
+  color: green;
+}
+
 .contents .titulo-port .map-img {
   text-align: center;
 }
