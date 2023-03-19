@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title-position{
+    font-family: PT Sans Narrow,sans-serif;
+    text-transform: capitalize;
+    color: #272727;
+    margin: 5rem 8rem 1rem 8rem;
+}
+
+.iframe-pdf{
+    border: none;
+    height: 100%;
+    width: 70%;
+    margin:  1.5rem auto 0 auto;
+}
+
+.iframe-pdf iframe{
+    border: none;
+}
+
+
+.title-position2{
+    font-family: PT Sans Narrow,sans-serif;
+    text-transform: capitalize;
+    color: #272727;
+    margin: 1rem 8rem 1rem 8rem;
+}
+
+
+.iframe-pdf2{
+    border: none;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto 10rem auto;
+}
+
+.iframe-pdf2 iframe{
+    border: none;
+}
