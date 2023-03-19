@@ -8,6 +8,8 @@
   --fontPrimary: "PT Sans Narrow", sans-serif;
   --colorBlue: #1e225c;
   --colorOrange: #ec6a30;
+  --colorBrown: #9e8046;
+  --colorRed: #b63232;
 }
 
 body {
@@ -126,14 +128,24 @@ body {
   width: 5%;
   border: 2px solid var(--colorOrange);
 }
+
 /* Mexendo com a tabela */
 .tables {
+  position: relative;
   width: 80%;
   margin: 0 auto;
 }
 .tables table {
   border: none;
 }
+.tables tbody tr:nth-child(2) {
+  color: green;
+}
+:is(table) td {
+  border-bottom: 1px solid var(--colorBlue);
+  padding: 1.2rem 0;
+}
+
 .tables th {
   background-color: var(--colorBlue);
   color: var(--colorOrange);
@@ -144,9 +156,25 @@ body {
   padding: 1rem;
   width: 20%;
 }
-.tables tbody td:nth-child(1n + 2) {
-  color: green;
+.tables tbody td:nth-child(1) {
+  text-align: justify;
+  padding-top: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
 }
+.tables tbody td {
+  font-weight: 600;
+  text-align: center;
+}
+.tables tbody .trBrown {
+  color: var(--colorBrown);
+}
+.tables tbody .trRed {
+  color: var(--colorRed);
+}
+
+/* Tratando do map */
 .contents .titulo-port .map-img {
   text-align: center;
 }
