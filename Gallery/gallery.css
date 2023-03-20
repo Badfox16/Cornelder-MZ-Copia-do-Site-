@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+
+.main-gallery{
+    position: relative;
+}
+
+.main-gallery a{
+    text-decoration: none;
+    color: #ed6a1b;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -53,9 +63,4 @@
 .grid-container > div:hover .icon-span {
   visibility: visible;
   width: 100%;
-}
-
-/*--------ACTIVES----------*/
-.icon-span > i:active{
-    
 }
