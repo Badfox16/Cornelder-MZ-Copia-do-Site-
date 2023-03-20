@@ -245,4 +245,27 @@ body {
 .contents .ctt-img {
    display: flex;
    align-items: center;
+   gap: 2%;
+   margin-top: 5%;
+}
+.contents .ctt-img img {
+   background-color: var(--colorOrange);
+   padding: 15px;
+}
+.contents .caption {
+   text-align: justify;
+}
+.contents .caption h3 {
+   color: var(--colorBlue);
+   font-size: 1.35rem;
+}
+.contents .caption p {
+   color: var(--colorGray);
+}
+.contents .port-beira-content .pbc-hr {
+   margin: 7% auto;
+   border-width: 0;
+   border: 1px solid rgba(128, 128, 128, 0.349);
+   width: 100%;
+   opacity: 0.4;
 }
