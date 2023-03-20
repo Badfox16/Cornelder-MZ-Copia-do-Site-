@@ -9,16 +9,53 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1.875rem 1.875rem;
-
   width: 80%;
   margin: 7rem auto;
 }
 
-.grid-container>div>img {
-    width: 100%;
-    height: 100%;
+.grid-container > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.icon-span{
-    color: #ed6a1b;
+.grid-container > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 0%;
+  background-color: rgba(15, 38, 58, 0.9);
+  transition: all 0.4s ease 0s;
+  overflow: hidden;
+}
+
+.icon-span {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: #ed6a1b;
+  transition: all 0.4s ease 0s;
+}
+.icon-span > i {
+  cursor: pointer;
+}
+
+/*----HOVERS............*/
+.grid-container > div:hover .slide-action,
+.grid-container > div:hover .icon-span {
+  visibility: visible;
+  width: 100%;
+}
+
+/*--------ACTIVES----------*/
+.icon-span > i:active{
+    
 }
