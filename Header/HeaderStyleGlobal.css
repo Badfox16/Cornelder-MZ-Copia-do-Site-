@@ -115,6 +115,9 @@ header .nav-bar-blue nav ul li a {
 header .nav-bar-blue nav ul li a:hover {
   color: var(--colorOrange);
 }
+header .nav-bar-blue nav ul li a:first-child {
+  color: white;
+}
 
 header .nav-bar-blue nav ul li:hover {
   color: var(--colorOrange);
