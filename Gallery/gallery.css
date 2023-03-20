@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.875rem 1.875rem;
+
+  width: 80%;
+  margin: 7rem auto;
+}
+
+.grid-container>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-span{
+    color: #ed6a1b;
+}
