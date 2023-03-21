@@ -46,3 +46,8 @@ function showSlidesAuto() {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlidesAuto, 6000); 
 }
+
+// Acao do botao close no slideShow
+function closeYt(){
+  window.document.querySelector(".seeYoutube").style.display="none";
+}

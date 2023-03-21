@@ -11,6 +11,9 @@
    --colorBrown: #9e8046;
    --colorRed: #b63232;
    --colorGray: #555555;
+   --colorWhiteSmoke: hsla(0, 0%, 100%, 0.5);
+   --colorWhiteBlue: #337ab7;
+   --colorWhiteRed: #d9534f;
 }
 
 body {
@@ -89,6 +92,7 @@ body {
    position: absolute;
    top: 0;
 }
+
 /* Keyframe de texto para cima */
 @keyframes uptext {
    from {
@@ -99,8 +103,57 @@ body {
    }
 }
 
-/* Conteudo abaixo do slide-show */
+/* Botoes no slide show */
+.float-btn {
+   position: absolute;
+   top: 17%;
+   right: 1%;
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   gap: 1.5rem;
+}
+.seeMagazine,
+.seeYoutube {
+   position: relative;
+   padding: 30px;
+   background-color: var(--colorWhiteSmoke);
+   border-radius: 4.5px;
+}
+.float-btn button {
+   background-color: var(--colorOrange);
+   padding: 1rem 0.5rem;
+   border: none;
+   border-radius: 4.5px;
+}
+.float-btn a button {
+   color: white;
+   text-decoration: none;
+   font-size: 1.3rem;
+   cursor: pointer;
+}
+.float-btn .seeMagazine button {
+   background-color: var(--colorWhiteBlue);
+}
+.float-btn .seeYoutube span {
+   position: absolute;
+   top: 0;
+   right: 2%;
+   color: var(--colorGray);
+   font-size: 1.3rem;
+   cursor: pointer;
+}
+.float-btn .seeYoutube button {
+   background-color: var(--colorWhiteRed);
+}
+.float-btn .seeMagazine button:hover {
+   background-color: #20629b;
+}
+.float-btn .seeYoutube button:hover {
+   background-color: #c43b37;
+}
 
+/* Conteudo abaixo do slide-show */
 .contents {
    display: flex;
    justify-content: center;
@@ -229,20 +282,111 @@ body {
 .contents .pbt-content > p {
    color: var(--colorGray);
 }
+/* Imagens da Port Beira (3) */
 .contents .port-beira-content {
    display: flex;
    justify-content: center;
    align-items: center;
    gap: 1%;
+   margin-top: 1%;
 }
 .contents .container-terminal,
 .generalCargo-terminal,
 .beiraGrain-terminal {
    display: flex;
+   justify-content: center;
    width: 15%;
    flex-direction: column;
+   position: relative;
+}
+.contents .container-terminal {
+   width: 14.81%;
+   margin-top: 0.1%;
+}
+.beiraGrain-terminal {
+   margin-top: 1.7%;
 }
 .contents .ctt-img {
    display: flex;
    align-items: center;
+   gap: 2%;
+   margin-top: 5%;
+}
+.contents .ctt-img img {
+   background-color: var(--colorOrange);
+   padding: 15px;
+}
+.contents .caption {
+   text-align: justify;
+}
+.contents .caption h3 {
+   color: var(--colorBlue);
+   font-size: 1.35rem;
+}
+.contents .caption p {
+   color: var(--colorGray);
+}
+.contents .port-beira-content .pbc-hr {
+   margin: 7% auto;
+   border-width: 0;
+   border: 1px solid rgba(128, 128, 128, 0.349);
+   width: 100%;
+   opacity: 0.4;
+}
+.contents .contentsection {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+}
+
+.contents .contentsection p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: justify;
+   font-size: 1.1rem;
+   color: var(--colorGray);
+}
+.contents .pbt-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2%;
+}
+.firstBTN-pbt {
+   margin-top: 98%;
+}
+.secondBTN-pbt {
+   margin-top: 98%;
+}
+.thirdBTN-pbt {
+   margin-top: 10%;
+}
+.contents .pbt-btn button {
+   border: none;
+   border-radius: 5px;
+   padding: 12px 15px;
+   text-transform: uppercase;
+   color: var(--colorOrange);
+   background-color: var(--colorBlue);
+   cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 1366px) {
+   .next {
+      right: 2%;
+      border-radius: 3px 0 0 3px;
+   }
+   .float-btn {
+      position: absolute;
+      top: 24%;
+      right: 1%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1.5rem;
+   }
 }
