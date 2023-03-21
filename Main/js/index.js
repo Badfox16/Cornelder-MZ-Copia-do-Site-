@@ -47,8 +47,7 @@ function showSlidesAuto() {
   setTimeout(showSlidesAuto, 6000); 
 }
 
-// Acao do botao do botao close no slideShow
+// Acao do botao close no slideShow
 function closeYt(){
-  let seeYoutube = document.querySelector(".seeYoutube");
-  seeYoutube.style.display = "none";
+  window.document.querySelector(".seeYoutube").style.display="none";
 }
