@@ -161,13 +161,40 @@ body {
    background-color: var(--colorOrange);
    height: 15rem;
 }
-
-.slideshow-second figure img {
+.slideshow-second .sls-text {
+   position: relative;
+   display: inline-block;
+   padding: 1%;
+   top: 9%;
+   left: -9%;
+   background-color: var(--colorBlue);
+   transform: rotate(54deg);
+}
+.slideshow-second .sls-text .click-fixe {
+   top: 55%;
+   padding: 10%;
+   width: 0%;
+   display: flex;
+   align-items: center;
+}
+.slideshow-second .sls-text .click-fixe > p {
+   display: block;
+   width: 100%;
+   font-weight: 700;
+   font-size: 0.9rem;
+   transform: rotate(307deg);
+   color: var(--colorOrange);
+   text-transform: uppercase;
+   z-index: 1;
+   margin-left: 10rem;
+}
+.slideshow-second .sls-img figure img {
    width: 5%;
    float: left;
-   margin: -1.7rem 10vw 0 60vw;
+   overflow: hidden;
+   margin: -15vh 8vw 0 62vw;
 }
-.slideshow-second figure {
+.slideshow-second .sls-img figure {
    position: relative;
    width: 500%;
    margin: 0;
