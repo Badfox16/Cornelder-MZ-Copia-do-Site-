@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    background: #0090cb;
+    text-shadow: none;
+    color: #fff;
+}
+
 .title-position{
     font-family: PT Sans Narrow,sans-serif;
     text-transform: capitalize;
