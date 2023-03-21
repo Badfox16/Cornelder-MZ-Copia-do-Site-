@@ -101,6 +101,7 @@ body {
       top: 11%;
    }
 }
+
 /* Botoes no slide show */
 .float-btn {
    position: absolute;
@@ -144,9 +145,14 @@ body {
 .float-btn .seeYoutube button {
    background-color: var(--colorWhiteRed);
 }
+.float-btn .seeMagazine button:hover {
+   background-color: #20629b;
+}
+.float-btn .seeYoutube button:hover {
+   background-color: #c43b37;
+}
 
 /* Conteudo abaixo do slide-show */
-
 .contents {
    display: flex;
    justify-content: center;
