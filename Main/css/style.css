@@ -282,6 +282,7 @@ body {
 .contents .pbt-content > p {
    color: var(--colorGray);
 }
+
 /* Imagens da Port Beira (3) */
 .contents .port-beira-content {
    display: flex;
@@ -303,9 +304,12 @@ body {
    width: 14.81%;
    margin-top: 0.1%;
 }
-.beiraGrain-terminal {
-   margin-top: 1.7%;
-}
+
+/* Responsavel pelo terceiro conteiner para media queries*/
+/* .beiraGrain-terminal {
+   margin-top: 1%;
+} */
+
 .contents .ctt-img {
    display: flex;
    align-items: center;
@@ -355,6 +359,8 @@ body {
    align-items: center;
    margin-top: 2%;
 }
+
+/* posicionamento top dos 3 containers */
 .firstBTN-pbt {
    margin-top: 98%;
 }
@@ -362,8 +368,9 @@ body {
    margin-top: 98%;
 }
 .thirdBTN-pbt {
-   margin-top: 10%;
+   margin-top: 62%;
 }
+
 .contents .pbt-btn button {
    border: none;
    border-radius: 5px;
