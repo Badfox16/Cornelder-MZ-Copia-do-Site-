@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-/* Fim da area do header */
 body {
     font-family: 'PT Sans Narrow', sans-serif;
     overflow-x: hidden;
@@ -15,7 +14,9 @@ body {
     position: relative;
 }
 
+/* Subheader */
 .back{
+    font-family: 'PT Sans Narrow', sans-serif;
     background-position: center center;
     background-repeat: no-repeat;
     padding-bottom: 120px;
@@ -25,11 +26,11 @@ body {
 }
 
 #banner{
-    background-color: #00000066;
-    height: 100%;
+    height: 330px;
     width: 100%;
+    background: url(../img/publications.png);
     position: absolute;
-    top: 0;
+    top:0%;
 }
 
 #banner div{
