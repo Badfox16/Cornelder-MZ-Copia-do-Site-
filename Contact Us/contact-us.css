@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.map-inner-container{
+    width: 85%;
+    height: 15.6rem;
+    margin: 7rem auto 0 auto;
+}
