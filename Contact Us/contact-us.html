@@ -14,6 +14,8 @@
       href="../news/img/favicon.png"
       type="image/x-icon"
     />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body class="body-contact">
     <header>
@@ -146,7 +148,7 @@
         <div class="location-container">
           <div class="location-left">
             <div class="location-icon">
-              <img src="../Contact Us/img/map-marker.png">
+              <img src="../Contact Us/img/map-marker.png" />
             </div>
             <p>PO. BOX 236 Porto Da Beira,</p>
             <p>Largo dos CFM. Beira</p>
@@ -154,19 +156,53 @@
           </div>
           <div class="location-middle">
             <div class="location-icon">
-              <img src="../Contact Us/img/envelop.png">
+              <img src="../Contact Us/img/envelop.png" />
             </div>
-            <a href="mailto:cornelder@cornelder.co.mz">cornelder@cornelder.co.mz</a>
+            <a href="mailto:cornelder@cornelder.co.mz"
+              >cornelder@cornelder.co.mz</a
+            >
           </div>
           <div class="location-right">
             <div class="location-icon">
-              <img src="../Contact Us/img/phone.png">
+              <img src="../Contact Us/img/phone.png" />
             </div>
-            <p>TEL: (+258) 23 322 735 </p>
+            <p>TEL: (+258) 23 322 735</p>
             <p>FAX: (+258) 23 322 736</p>
           </div>
         </div>
-
+      </section>
+      <section class="form-section">
+        <h2>Get Touch With Us</h2>
+        <form action="">
+          <input type="text" name="name" id="input1" placeholder="Full Name" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your E-mail"
+            id="input2"
+          />
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone Number"
+            id="input3"
+          />
+          <input type="text" name="address" id="input4" placeholder="Address" />
+          <textarea
+            name="comment"
+            id="input5"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <div
+            id="my_captcha_form"
+            class="g-recaptcha"
+            data-sitekey="6Lft9x0lAAAAAI0JhrIDoVeeoFRsPlMSKXZtLIwR"
+            data-callback="recaptchaCallback"
+          ></div>
+          <input type="submit" value="Send Message" id="input6" />
+        </form>
       </section>
     </main>
 
@@ -325,5 +361,12 @@
         <p>Developed by <span>Veludo&Mentol</span></p>
       </div>
     </footer>
+
+    <script>
+      function recaptchaCallback() {
+        document.getElementById("my_captcha_form").style.display= "none";
+        document.getElementById("input6").style.display = "block";
+      }
+    </script>
   </body>
 </html>
