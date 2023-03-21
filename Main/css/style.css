@@ -297,6 +297,7 @@ body {
    justify-content: center;
    width: 15%;
    flex-direction: column;
+   position: relative;
 }
 .contents .container-terminal {
    width: 14.81%;
@@ -339,6 +340,7 @@ body {
    flex-direction: column;
    width: 100%;
 }
+
 .contents .contentsection p {
    display: flex;
    justify-content: center;
@@ -346,6 +348,30 @@ body {
    text-align: justify;
    font-size: 1.1rem;
    color: var(--colorGray);
+}
+.contents .pbt-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2%;
+}
+.firstBTN-pbt {
+   margin-top: 98%;
+}
+.secondBTN-pbt {
+   margin-top: 98%;
+}
+.thirdBTN-pbt {
+   margin-top: 10%;
+}
+.contents .pbt-btn button {
+   border: none;
+   border-radius: 5px;
+   padding: 12px 15px;
+   text-transform: uppercase;
+   color: var(--colorOrange);
+   background-color: var(--colorBlue);
+   cursor: pointer;
 }
 
 /* Responsividade */
