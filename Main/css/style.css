@@ -282,18 +282,28 @@ body {
 .contents .pbt-content > p {
    color: var(--colorGray);
 }
+/* Imagens da Port Beira (3) */
 .contents .port-beira-content {
    display: flex;
    justify-content: center;
    align-items: center;
    gap: 1%;
+   margin-top: 1%;
 }
 .contents .container-terminal,
 .generalCargo-terminal,
 .beiraGrain-terminal {
    display: flex;
+   justify-content: center;
    width: 15%;
    flex-direction: column;
+}
+.contents .container-terminal {
+   width: 14.81%;
+   margin-top: 0.1%;
+}
+.beiraGrain-terminal {
+   margin-top: 1.7%;
 }
 .contents .ctt-img {
    display: flex;
@@ -327,9 +337,15 @@ body {
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   width: 80%;
+   width: 100%;
 }
 .contents .contentsection p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: justify;
+   font-size: 1.1rem;
+   color: var(--colorGray);
 }
 
 /* Responsividade */
