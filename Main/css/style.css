@@ -37,7 +37,6 @@ body {
 .mySlides img {
    width: 100%;
    height: 100%;
-   object-fit: cover;
 }
 .prev,
 .next {
@@ -60,7 +59,7 @@ body {
    border-radius: 3px 0 0 3px;
 }
 .next {
-   right: 1%;
+   right: 2%;
    border-radius: 3px 0 0 3px;
 }
 
@@ -153,7 +152,89 @@ body {
    background-color: #c43b37;
 }
 
-/* Conteudo abaixo do slide-show */
+/* Conteudo abaixo do slide show (first/main) */
+.slideshow-second {
+   position: relative;
+   margin-top: -1.6rem;
+   overflow: hidden;
+   background-color: var(--colorOrange);
+   height: 15rem;
+}
+.slideshow-second .sls-text {
+   position: relative;
+   display: inline-block;
+   padding: 1%;
+   top: 9%;
+   left: -9%;
+   background-color: var(--colorBlue);
+   transform: rotate(54deg);
+}
+.slideshow-second .sls-text .click-fixe {
+   top: 55%;
+   padding: 10%;
+   width: 0%;
+   display: flex;
+   align-items: center;
+}
+.slideshow-second .sls-text .click-fixe > p {
+   display: block;
+   width: 100%;
+   font-weight: 700;
+   font-size: 0.9rem;
+   transform: rotate(307deg);
+   color: var(--colorOrange);
+   text-transform: uppercase;
+   margin-left: 10rem;
+   z-index: 1;
+}
+.slideshow-second .sls-img figure img {
+   z-index: -5;
+   width: 5%;
+   float: left;
+   overflow: hidden;
+   margin: -15vh 8vw 0 62vw;
+}
+.slideshow-second .sls-img figure {
+   position: relative;
+   width: 500%;
+   margin: 0;
+   left: 0;
+   text-align: left;
+   font-size: 0;
+   animation: 30s slidy infinite;
+}
+
+@keyframes slidy {
+   0% {
+      left: 0%;
+   }
+   20% {
+      left: 0%;
+   }
+   25% {
+      left: -100%;
+   }
+   45% {
+      left: -100%;
+   }
+   50% {
+      left: -200%;
+   }
+   70% {
+      left: -200%;
+   }
+   75% {
+      left: -300%;
+   }
+   95% {
+      left: -300%;
+   }
+   100% {
+      left: -400%;
+   }
+}
+
+/* Conteudo abaixo do second slide-show */
 .contents {
    display: flex;
    justify-content: center;
