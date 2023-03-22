@@ -7,3 +7,15 @@ body {
    width: 100vw;
    height: 100vh;
 }
+
+/* Subheader */
+:is(section).back {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 34%;
+   background-image: url("https://www.cornelder.co.mz/assets/img/publications.jpg");
+   background-position: center;
+   background-size: cover;
+}
