@@ -188,6 +188,28 @@ body {
    margin-left: 10rem;
    z-index: 1;
 }
+.slideshow-second .click-content {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 0;
+   left: 6%;
+   width: 30%;
+   height: 100%;
+   z-index: 1;
+   cursor: pointer;
+   animation-name: upText;
+   animation-duration: 6s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+}
+.slideshow-second .click-content p {
+   color: var(--colorBlue);
+   padding: 1rem 0 0 1rem;
+   font-size: 1.9rem;
+   font-weight: 700;
+   text-transform: uppercase;
+}
 .slideshow-second .sls-img figure img {
    z-index: -5;
    width: 5%;
@@ -203,6 +225,15 @@ body {
    text-align: left;
    font-size: 0;
    animation: 30s slidy infinite;
+}
+
+@keyframes upText {
+   100% {
+      bottom: 0%;
+   }
+   0% {
+      top: 60%;
+   }
 }
 
 @keyframes slidy {
